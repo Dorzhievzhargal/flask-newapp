@@ -1,66 +1,114 @@
 {% extends 'base.html' %}
 
-{% block title %}
-пробная страница
-{% endblock %}
+
+
+
 
 {% block body %}
-<div class="container">
-    <h1>Страница про нас</h1>
-</div>
+
+<style>
+       .subscrybe-button {
+    background-color: rgb(200,0,0);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 15px;
+    transition: opacity 0.15s;
+    }
+
+   .subscrybe-button:hover{
+    opacity: 0.8;
+    }
+
+   .subscrybe-button:active{
+    opacity: 0.5;
+    }
 
 
-<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Menue</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-body-emphasis">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-          Dashboard
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-body-emphasis">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Orders
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-body-emphasis">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-          Products
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-body-emphasis">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-          Customers
-        </a>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>mdo</strong>
-      </a>
-      <ul class="dropdown-menu text-small shadow">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
-  </div>
+   .join-button{
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    border-style:solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    padding-left: 9px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 9px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    color 0.15s;
+    }
+
+
+   .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+    }
+
+   .join-button:active {
+    opacity: 0.7;
+    }
+
+
+   .tweet-button{
+    background-color: rgb(2, 158, 255);
+    border: none;
+    color: white;
+    height: 36px;
+    width: 70px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+    }
+
+    .tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+</style>
+
+
+    <button class="subscrybe-button"><b>
+        SUBSCRIBE
+    </b></button>
+
+
+    <button class="join-button">
+        JOIN
+    </button>
+
+    <button class="tweet-button">
+        Tweet
+    </button>
+
+<p class="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai!
+  </p>
+
+  <p class="video-stats">
+    3.4M views &#183; 6 months ago
+  </p>
+
+  <p class="video-author">
+    Marques Brownlee &#10003;
+  </p>
+
+  <p class="video-description">
+    Talking tech and AI on the heels of Google I/O.
+    Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+  </p>
+
+  <p class="apple-text">
+    Shop early for the best selection of holiday
+    favourites. <span class="span-exemple">Shop now ></span>
+  </p>
+
 {% endblock %}
